@@ -1,162 +1,65 @@
 <html>
-<head><title>TIME TABLE</title>
-<style>
-table, tr,th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th{
-	background-color:98FB98;
-}
-tr:nth-child(even){
-	text-align:center;
-	background-color:FFFFE0;
-}
-td{
-	text-align:center;
-}
-table{
-	width:80%;
-	height:250px;
-}
-</style>
-</head>
-<body>
-<table align="center" >
-<caption><b>COMPUTER SCIENCE SECTION-C TIME_TABLE</b></caption>
-<tr>
-	<th>DAY/TIME</th>
-	<th>8:00-9:00</th>
-	<th>9:00-10:00</th>
-	<th>10:00-11:00</th>
-	<th>11:00-12:00</th>
-	<th>12:00-1:00</th>
-	<th>1:00-2:00</th>
-	<th>2:00-3:00</th>
-</tr>
-<tr>
-	<th>MON</th>
-	<td>E&H</td>
-	<td>CS</td>
-	<td>DBMS</td>
-	<th rowspan="6">L<br>
-	U<br>
-	N<br>
-	C<br>
-	H<br>
-	<br><br>
-	B<br>
-	R<br>
-	E<br>
-	A<br>
-	K<br></th>
-	<td>OS</td>
-	<td>WT</td>
-	<td>SE</td>
-</tr>
-<tr>
-	<th>TUE</th>
-	<td>OS</td>
-	<td>WT</td>
-	<td>CS</td>
-	<td colspan="3">--WT LAB(ACC)--</td>
-</tr>
-<tr>
-	<th>WED</th>
-	<td colspan="3">--DBMS LAB(ACC)--</td>
-	<td>CS</td>
-	<td>SE</td>
-	<td>DBMS</td>
-</tr>
-<tr>
-	<th>THU</th>
-	<td colspan="2">--SOC LAB(E-Learning)--</td>
-	<td>WT</td>
-	<td>DBMS</td>
-	<td>SE</td>
-	<td>E&H</td>
-</tr>
-<tr>
-	<th>FRI</th>
-	<td>SOC</td>
-	<td>OS</td>
-	<td>WT</td>
-	<td colspan="3">--CS LAB(ACC)--</td>
-</tr>
-<tr>
-	<th>SAT</th>
-	<td colspan="2">--CC(E-Learning)--</td>
-	<td>SOC</td>
-	<td>OS</td>
-	<td>CS</td>
-	<td>DBMS</td>
-</tr>
-</table>
-<br>
-<table align="center" >
-<caption><b>COMPUTER SCIENCE SECTION-C STAFF INFO</b></caption>
-<tr>
-	<th>CODE</th>
-	<th>SUBJECT-NAME</th>
-	<th>STAFF</th>
-</tr>
-<tr>
-	<th>CS-221</th>
-	<td>Computatiuonal Statistics(CS)</td>
-	<td>DR.B.Srinivas Rao</td>
-</tr>
-<tr>
-	<th>CS-222</th>
-	<td>Database Management Systems(DBMS)</td>
-	<td>DR.B.Vara Prasad Rao</td>
-</tr>
-<tr>
-	<th>CS-223</th>
-	<td>Operating Systems(OS)</td>
-	<td>DR.R.Lakshmi Tulasi</td>
-</tr>
-<tr>
-	<th>CS-224</th>
-	<td>Software Engineering(SE)</td>
-	<td>N.Zareena(Class I/C)</td>
-</tr>
-<tr>
-	<th>CS-225</th>
-	<td>Web Technologies(WT)</td>
-	<td>N.Chandra Sekhar</td>
-</tr>
-<tr>
-	<th>CS-261</th>
-	<td>Computatiuonal Statistics Lab(CS Lab)</td>
-	<td>B.Manasa/ZSB/PRK</td>
-</tr>
-<tr>
-	<th>CS-262</th>
-	<td>Database Management Systems Lab(DBMS Lab)</td>
-	<td>Dr.BVPR/ KSK/ MN</td>
-</tr>
-<tr>
-	<th>CS-263</th>
-	<td>Web Technologies Lab(WT Lab)</td>
-	<td>NCS/ER/PSP</td>
-</tr>
-<tr>
-	<th>CSSL2</th>
-	<td>Skill Oriented Course-II(SOC)<br>a.Linux Programming (E-Learning)<br>
-	b.Mobile Application Development</td>
-	<td>Linux Programming<br>K.Siva Kumar</td>
-</tr>
-<tr>
-	<th>CSMC4</th>
-	<td>Ethics & Human Values (E&H)</td>
-	<td>Dr.P.Lakshmi Rani</td>
-</tr>
-<tr>
-	<th>  </th>
-	<td>Competitive Coding (CC)</td>
-	<td>Dr.B.Vara Prasad Rao</td>
-</tr>
-</table>
-
-</body>
+    <head><title>train travel</title></head>
+    <body>
+        <table border="2" align="center">
+            <tr align="center">
+                <th>Name of the Train</th>
+                <th>Place</th>
+                <th>Destination</th>
+                <th>Train No</th>
+                <th rowspan="5">Time
+                    <table border="2">
+                        <tr align="center">
+                            <th>Arrival</th>
+                            <th>Departure</th>
+                        </tr>
+                        <tr>
+                            <td>4:00</td>
+                            <td>4:15</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>10:05</td>
+                        </tr>
+                        <tr>
+                            <td>13:45</td>
+                            <td>14:00</td>
+                        </tr>
+                        <tr>
+                            <td>22:55</td>
+                            <td>23:05</td>
+                        </tr>
+                    </table></th>
+                <th>Fare</th>
+            </tr>
+            <tr>
+                <td>LPI Intercity Express</td>
+                <td>Lingampalli</td>
+                <td>Guntur</td>
+                <td>12007</td>
+                <td>345/-</td>
+            </tr>
+            <tr>
+                <td>Prashanti Express</td>
+                <td>Bhuvaneshwar</td>
+                <td>Banglore</td>
+                <td>17034</td>
+                <td>1080/-</td>
+            </tr>
+            <tr>
+                <td>Kondaveedu Express</td>
+                <td>Machilipatnam</td>
+                <td>Yashwanthpur</td>
+                <td>12238</td>
+                <td>1280/-</td>
+            </tr>
+            <tr>
+                <td>Narayanadri Express</td>
+                <td>Guntur</td>
+                <td>Tirupati</td>
+                <td>17225</td>
+                <td>560/-</td>
+            </tr>
+        </table>
+    </body>
 </html>
