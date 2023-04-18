@@ -1,30 +1,46 @@
 <html>
     <head><title>bio-data</title></head>
     <body>
-        <label for="n">Name:</label>
+        <form>
+            <label for="n">Name:</label>
         <input type="text" name="n" id="name" required>
         <br>
         <label for="e">E-Mail:</label>
         <input type="email" name="e" id="email" required>
         <br>
         <label for="pn">Phone No:</label>
-        <input type="number" name="pn" id="phonen" required>
+        <input type="tel" name="pn" id="phonen" required>
         <br>
         <label for="db">Date Of Birth:</label>
-        <input type="number" name="db" id="dob" required>
+        <input type="datetime-local" name="db" id="dob" required>
         <br>
         <label for="g">Gender:</label>
-        <input type="text" name="g" id="gender" required>
         <br>
-        <label for="cn">College Name:</label>
-        <input type="text" name="cn" id="cname" required>
+        <input type="radio" name="m" id="ma" required>
+        <label for="m">Male</label>
+        <br>
+        <input type="radio" name="m" id="fe" required>
+        <label for="m">Female</label>
+        <br>
+        <input type="radio" name="m" id="ot" required>
+        <label for="m">Others</label>
         <br>
         <label for="a">Address:</label>
         <input type="text" name="a" id="address" required>
         <br>
-        <label for="n">Education</label>
-        <input type="text" name="n" id="name" required>
+        <label for="edu">Highest level of Education</label>
+        <select name="edu" id="educ">
+            <option value="phd">PHD</option>
+            <option value="m">Masters</option>
+            <option value="b">Bachelors</option>
+            <option value="h">High School</option>
+        </select>
         <br>
         <input type="submit">
+        &nbsp; &nbsp;
+        <input type="reset" >
+        </form>
     </body>
 </html>
+
+
