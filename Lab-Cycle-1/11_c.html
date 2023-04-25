@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>div tag</title>
+        <style>
+            div{
+                position: relative;
+                width:200px;
+                height:200px;
+                animation: square 1s linear infinite;
+                background-color: aqua;           
+            }
+            body{
+                animation: bg 1s linear infinite;
+            }
+            @keyframes bg{
+                0%{
+                    background-color: aquamarine;
+                }
+                25%{
+                    background-color: bisque;
+                }
+                50%{
+                    background-color: cadetblue;
+                }
+                75%{
+                    background-color: turquoise;
+                }
+                100%{
+                    background-color: antiquewhite;
+                }
+            }
+            @keyframes square{    
+                0%
+                {
+                    background-color: antiquewhite;
+                    left:0px;
+                    top:0px;
+                }
+                25%
+                {
+                    background-color: aquamarine;
+                    left:200px;
+                    top:0px;
+                }
+                50%
+                {
+                    background-color: bisque;
+                    left:200px;
+                    top:200px;
+                }
+                75%
+                {
+                    background-color: cadetblue;
+                    left:0px;
+                    top:200px;
+                }
+                100%
+                {
+                    background-color: turquoise;
+                    left:0px;
+                    top:0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
