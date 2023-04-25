@@ -1,0 +1,29 @@
+<html>
+	<head><title>z-index</title>
+	<style>
+		.cont{
+			position:relative;
+		}		
+		img{
+			position:absolute;
+		}
+		#st{
+			width:300px;
+			margin-left:200px;
+			z-index:1;
+			border-radius: 8px;
+		}
+		#nd{
+			width:300px;
+			z-index:2;
+			border-radius: 8px;
+		}
+			
+	</style>
+	<body>
+		<div class="cont">
+			<img id="st"  src="1.jpg" alt="image not found">
+			<img id="nd"  src="2.jpg" alt="image not found">
+		</div>
+	</body>
+</html>
