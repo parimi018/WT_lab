@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body>
+        <center>
+            <button onclick="showMatri()">Show the Matrices</button>
+            <table id="output1" class="output"></table><br>
+            <table id="output2" class="output"></table>
+
+            <button onclick="addMatri(m1,m2)"> Click to ADD the Matrices</button>
+            <table id="addout" class="output"></table>
+
+            <button onclick="mulMatri(m1,m2)"> Click to Multiply the Matrices</button>
+            <table id="mulout" class="output" ></table>
+        </center>
+        <script>
+            let m1=[
+                [1,2,3],
+                [4,5,6],
+                [7,8,9]
+            ]
+            let m2=[
+                [1,0,0],
+                [0,1,0],
+                [0,0,1]
+            ]
+
+            function printMatri(a){
+                let output="";
+                for(i=0;i<a.length;i++){
+                    output+="<tr>";
+                        for(j=0;j<a.length;j++){
+                            output+="<td>"+a[i][j]+"</td>";
+                        }
+                    output+="</tr>";
+                }
+                return output;
+            }
+
+            function showMatri(){
+                let matrix1=printMatri(m1);
+                let matrix2=printMatri(m2);
+                document.getElementById("output1").innerHTML=matrix1;
+                document.getElementById("output2").innerHTML=matrix2;
+            }
+
+            function addMatri(a,b){
+                let c=[];
+                for(i=0;i<a.length;i++){
+                    let str=[];
+                    for(j=0;j<a.length;j++){
+                        str.push(a[i][j]+b[i][j]);
+                    }
+                    c.push(str);
+                }
+                let ao=printMatri(c);
+                document.getElementById("addout").innerHTML=ao;
+            }
+
+            function mulMatri(a,b){
+                let c=[];
+                for(i=0;i<a.length;i++){
+                    let str=[];
+                    for(j=0;j<a.length;j++){
+                        str.push(a[i][j]*b[j][i]);
+                    }
+                    c.push(str);
+                }
+                let mo=printMatri(c);
+                document.getElementById("mulout").innerHTML=mo;
+            }
+
+        </script>
+    </body>
+</html>
