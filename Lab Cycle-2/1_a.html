@@ -1,17 +1,13 @@
 <html>
     <head>
         <title>leap or not</title>
+        <link rel="stylesheet" href="mystyle.css">
         <script src="1_a.js"></script>
-        <style>
-            body{
-                background-color: aqua;
-                text-align: center;
-                font-size: 30px;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color:chocolate;
-            }
-            </style>
     </head>
-    <body></body>
+    <body>
+        <label for="y">Enter a Year:</label>
+        <input type="text" id="y"><br>
+        <input type="submit" value="OK" onclick="getYear()"><br>
+        <span id="output"></span>
     </body>
 </html>

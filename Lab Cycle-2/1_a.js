@@ -7,10 +7,18 @@ function isleapyear(y)
         return false;
     }
 }
-let y=parseInt(window.prompt("Enter a year:"));
-if(isleapyear(y)){
-    document.writeln( y+" is a Leap Year");
-}
-else{
-    document.writeln( y+" is not a leap year");
+
+function getYear(){
+    let y=document.getElementById("y").value;
+    if(y>0){
+        if(isleapyear(y)){
+            document.getElementById("output").innerHTML= y+" is a Leap Year.";
+        }
+        else{
+            document.getElementById("output").innerHTML= y+" is not a Leap Year.";
+        }
+    }
+    else{
+        document.getElementById("output").innerHTML="Not a Valid Year";
+    }
 }
