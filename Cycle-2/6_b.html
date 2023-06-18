@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Mouse Events</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function displayText(){
+                document.getElementById("oncout").innerHTML="This Text is displayed by using onclick event"
+            }
+            function cColor(a){
+                a.style.changeColor="black";
+                a.style.background="#33FFBD";
+            }
+            function chColor(b){
+                b.style.changeColor="#33FFBD";
+                b.style.background="black";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="submit" value="Click Here" onclick="displayText()"><br><br>
+        <span id="oncout" class="output"></span><br><br>
+        <input type="submit" value="Click and hold to change Color" onmousedown="cColor(this)" onmouseup="chColor(this)"><br>
+        <input type="submit" value="Hover to change Color" onmouseover="cColor(this)" onmousemove="chColor(this)">
+    </body>
+</html>

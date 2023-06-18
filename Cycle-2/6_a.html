@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Form Events</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function mf(){
+                let mn=document.getElementById("in").value;
+                document.getElementById("oncout").innerHTML="Your Favorite Movie is: "+mn;
+            }
+            function chanColor(a){
+                a.style.changeColor="black";
+                a.style.background="#33FFBD";
+            }
+            function displayText(){
+                document.getElementById("onbout").innerHTML="Your Cursor is out of input's bounds."
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <label for="in">Enter your favorite movie:</label>
+            <input type="text" id="in" onchange="mf()" onfocus="chanColor(this)" onblur="displayText()"><br><br>
+            <span id="oncout" class="output"></span><br><br><br><br>
+            <span id="onbout" class="output"></span>
+        </center>
+    </body>
+</html>
