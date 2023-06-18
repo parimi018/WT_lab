@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>palindrome</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function REV(){
+                let n=document.getElementById("rev").value;
+                let num=n;
+                let r=0;
+                while(n!=0){
+                    r=r*10+(n%10);
+                    n=Math.floor(n/10);
+                }
+                document.getElementById("revout").innerHTML="The reverse of number "+num+" is "+r;
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <label for="rev">Enter a number:</label><br>
+            <input type="number" id="rev" required><br>
+            <input type="submit" value="OK" onclick="REV()"><br><br>
+            <span id="revout" class="output"></span>
+        </center>
+    </body>
+</html>

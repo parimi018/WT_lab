@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <input type="submit" value="Show Initial elements in the Array" onclick="disArr()"><br><br>
+        <span id="arrayoutput" class="output"></span><br><br><br>
+        <label for="num">Enter a number to search in the array:</label>
+        <input type="number" id="num" ><br>
+        <input type="submit" value="Search the number" onclick="numSearch()"><br><br>
+        <span id="binsearchoutput" class="output"></span><br>
+        <script>
+            let a=new Array(0,1,2,3,4,5,6,7,8,9);
+
+            function disArr(){
+                document.getElementById("arrayoutput").innerHTML="Elements in the array are:&nbsp["+a+"]";
+            }
+
+            function binSearch(a,e){
+                let low=0;
+                let high=a.length-1;
+                let mid;
+                while(low<=high){
+                    mid=Math.floor((low+high)/2);
+                    if(e==a[mid]){
+                        return mid;
+                    }else if(e<a[mid]){
+                        high=mid-1;
+                    }else{
+                        low=mid+1;
+                    }
+                }
+                return 0;
+            }
+
+            function numSearch(){
+                let e=parseInt(document.getElementById("num").value);
+                let i=binSearch(a,e);
+                if(i==0){
+                    document.getElementById("binsearchoutput").innerHTML="Number not found in the array";
+                }
+                else{
+                    document.getElementById("binsearchoutput").innerHTML="Number is found at the index:"+i;
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>sum of digits</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function nsum(){
+                let n=document.getElementById("n").value;
+                let num=n;
+                let s=0;
+                s=parseInt(s);
+                let r=0;
+                r=parseInt(r);
+                while(n){
+                    r=n%10;
+                    s=s+r;
+                    n=Math.floor(n/10);
+                }
+                document.getElementById("sout").innerHTML="Sum of the digits of "+num+" is "+s;
+            }
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <label for="n">Enter a Number:</label><br>
+            <input type="number" id="n" required><br>
+            <input type="submit" value="OK" onclick="nsum()" required><br><br>
+            <span id="sout" class="output"></span>
+        </center>
+    </body>
+</html>

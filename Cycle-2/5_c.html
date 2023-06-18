@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Date Object</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <center>
+            <div class="output">
+                <span id="output"></span>
+                <br><br>
+                <span id="curdate"></span> 
+			</div> 
+		</center>
+    </body>
+    <script>
+        let d=new Date();
+        let h=d.getHours();
+        let m=d.getMinutes();
+        let gm="Good Night";
+        if(h<21){
+            gm="Good Evening";
+        }
+        if(h<16){
+            gm="Good AfterNoon";
+        }
+        if(h<12){
+            gm="Good Morning";
+        }
+        document.getElementById("output").innerHTML=gm;
+        document.getElementById("curdate").innerHTML="The Time is "+h+":"+m;
+    </script>
+</html>

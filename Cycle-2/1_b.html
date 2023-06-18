@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>biggest of 3</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function mygreater()
+            {
+                let a=parseInt(document.getElementById("a").value);
+                let b=parseInt(document.getElementById("b").value);
+                let c=parseInt(document.getElementById("c").value);
+                if(a>b){
+                    if(a>c){
+                        document.getElementById("gout").innerHTML=a+" is the Biggest amoung "+a+","+b+","+c;
+                    }
+                    else{
+                        document.getElementById("gout").innerHTML=c+" is the Biggest amoung "+a+","+b+","+c;
+                    }
+                }
+                else if(b>c){
+                    document.getElementById("gout").innerHTML=b+" is the Biggest amoung "+a+","+b+","+c;
+                }
+                else{
+                    document.getElementById("gout").innerHTML=c+" is the Biggest amoung "+a+","+b+","+c;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <label for="a">Enter the 1st number:</label><br>
+            <input type="number" id="a" required><br>
+            <label for="b">Enter the 2nd number:</label><br>
+            <input type="number" id="b" required><br>
+            <label for="c">Enter the 3rd number:</label><br>
+            <input type="number" id="c" required><br>
+            <input type="submit" value="OK" onclick="mygreater()"><br><br>
+            <span id="gout" class="output"></span>
+        </center>
+    </body>
+</html>

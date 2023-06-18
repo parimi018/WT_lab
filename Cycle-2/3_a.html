@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>GCD Reverse Random</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function GCD(){
+            let n1=document.getElementById("n1").value;
+            let n2=document.getElementById("n2").value;
+            let max=0,d=0,b=0,s=0;
+            if(n1>n2){
+                b=n1;
+                s=n2;
+            }
+            else{
+                b=n2;
+                s=n1;
+            }
+            for(i=1;i<=b;i++){
+                if((b%i==0) && (s%i==0)){
+                    d=i;
+                    if(max<d){
+                        max=d;
+                    }      s
+                }
+            }
+            document.getElementById("gcdout").innerHTML="The GCD of "+n1+" and "+n2+" is "+max;
+        }
+
+        function REV(){
+            let n=document.getElementById("rev").value;
+            let num=n;
+            let r=0;
+            while(n!=0){
+                r=r*10+(n%10);
+                n=Math.floor(n/10);
+            }
+            document.getElementById("revout").innerHTML="The reverse of number "+num+" is "+r;
+        }
+
+        function RAN()
+        {
+            let n=Math.floor(Math.random()*10);
+            document.getElementById("ranout").innerHTML="The random number is: "+n;
+        }
+        </script>
+    </head>
+    <body>
+        <center>
+            <label for="n1">Enter 1st Number:</label><br>
+            <input type="number" id="n1" required><br>
+            <label for="n2">Enter 2nd Number:</label> <br>
+            <input type="number" id="n2" required><br>
+            <input type="submit" value="OK" onclick="GCD()" equired><br><br>
+            <span id="gcdout" class="output"></span><br><br><br>
+
+            <label for="rev">Enter a Number:</label> <br>
+            <input type="number" id="rev" required><br>
+            <input type="submit" value="OK" onclick="REV()" required><br><br>
+            <span id="revout" class="output"></span><br><br>
+
+            <label>Click Below to Generate Random Number</label><br>
+            <input type="submit" value="OK" onclick="RAN()"><br><br>
+            <span id="ranout" class="output"></span><br>
+        </center>
+    </body>
+</html>

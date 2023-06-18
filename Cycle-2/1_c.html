@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Arithematic Operators</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function myop(){
+                let a=document.getElementById("a").value;
+                let o=document.getElementById("o").value;
+                let b=document.getElementById("b").value;
+                switch(o){
+                    case '+':
+                        document.getElementById("opout").innerHTML=a+"+"+b+"="+(parseInt(a) + parseInt(b));
+                        break;
+                    case '-':
+                        document.getElementById("opout").innerHTML=a+"-"+b+"="+(a-b);
+                        break;
+                    case '*':
+                        document.getElementById("opout").innerHTML=a+"*"+b+"="+(a*b);
+                        break;
+                    case '/':
+                        document.getElementById("opout").innerHTML=a+"/"+b+"="+(a/b);
+                        break;
+                    case '%':
+                        document.getElementById("opout").innerHTML=a+"%"+b+"="+(a%b);
+                        break;
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <label for="a">Enter 1st number:</label><br>
+            <input type="number" id="a" required><br>
+            <label for="o">Enter the Operator:</label><br>
+            <input type="string" id="o" required><br>
+            <label for="b">Enter 2nd number:</label><br>
+            <input type="number" id="b" required><br>
+            <input type="submit" value="OK" onclick="myop()"><br><br>
+            <span id="opout" class="output"></span>
+        </center>
+    </body>
+</html>

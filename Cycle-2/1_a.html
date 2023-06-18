@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>leap or not</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+			function isleapyear(y)
+			{
+				if(y%4==0 && y%100!=0 || y%400==0){
+					return true;
+				}
+				else{
+					return false;
+				}
+			}
+
+			function getYear()
+			{
+				let year = parseInt(document.getElementById("year").value);
+				let answer = '';
+
+				if(year>0 && year<=9999)
+				{	
+					if(isleapyear(year))
+						answer = year + " is a Leap Year";
+					else
+						answer = year + " is not a Leap Year";
+				}
+				else
+					answer = "Invalid Year!";
+				
+				document.getElementById("output").innerHTML = answer;
+			}
+		</script>
+    </head>
+    <body>
+        <div>
+			<center>
+				<label for="year">Enter a year:</label>
+				<input type="number" id="year"><br>
+				<input type="submit" value="SUBMIT" onclick="getYear();"><br><br>
+				<span id="output" class="output"></span>
+			</center>
+		</div>
+    </body>
+</html>

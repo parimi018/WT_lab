@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>first 10 natural numbers except 5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <label>First 10 natural numbers except 5 are:</label><br><br><br>
+            <span id="nn" class="output"></span>
+        </center>
+        <script>
+            let a=new Array();
+            for(i=1;i<=10;i++){
+                if(i!=5)
+                {
+                    a.push(i);
+                }
+            }
+            document.getElementById("nn").innerHTML=a;
+        </script> 
+    </body>
+</html>
